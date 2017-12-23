@@ -1,0 +1,3 @@
+package {'sysdig':
+	ensure => installed,
+}

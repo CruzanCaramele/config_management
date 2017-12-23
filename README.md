@@ -24,7 +24,7 @@ Connect to the VM with the following command:
 You now have a command line shell on the VM. Check that Puppet is installed and working:
 
     puppet --version
-    5.2.0
+    5.XX.XX
 
 Try the 'Hello, world' example:
 

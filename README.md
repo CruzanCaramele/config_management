@@ -1,7 +1,5 @@
 # Configurantion Management with Puppet
 
-[It's great having a robot butler](http://bitfieldconsulting.com/files/1240_03_01_small.png)
-
 Much of this repo  thanks to the great work done by John Arundel author of [The Puppet 5 Beginner's Guide](http://bitfieldconsulting.com/pbg3)
 
 ## Getting Started

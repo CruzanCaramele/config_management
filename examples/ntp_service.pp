@@ -2,6 +2,7 @@ service {'ntp':
 	ensure		=> running,
 	enable		=> true,
 	hasstatus	=> false,
+	pattern		=> 'ntpd',
 }
 
 # When hasstatus is false, Puppet knows not to try to check

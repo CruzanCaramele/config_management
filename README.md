@@ -1,7 +1,3 @@
-# Configurantion Management with Puppet
-
-Much of this repo  thanks to the great work done by John Arundel author of [The Puppet 5 Beginner's Guide](http://bitfieldconsulting.com/pbg3)
-
 ## Getting Started
 
 Clone this repo.
@@ -36,3 +32,10 @@ Try the 'Hello, world' example:
     cat /tmp/hello.txt
     hello, world
 
+
+Install nginx and let puppet manage it for you:
+
+    sudo puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
+
+    test:
+    curl http://localhost

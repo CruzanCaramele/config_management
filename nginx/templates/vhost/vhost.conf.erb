@@ -1,0 +1,8 @@
+server {
+    listen <%= @port_number %>;
+    root   <%= @vhost_docroot %>;
+    server_name <%= @name %> <%= @aliases_server %>;
+
+    access_log <%= @log_directory %>/<%= @name %>.access_log;
+    error_log  <%= @log_directory %>/<%= @name %>.error_log;
+}

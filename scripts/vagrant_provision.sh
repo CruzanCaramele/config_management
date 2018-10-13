@@ -1,7 +1,20 @@
 #!/bin/bash
 set -e
 
+# Variables
 REPO_DEB_URL=https://apt.puppetlabs.com/puppet-release-${DISTRIB_CODENAME}.deb
+
+if which  puppet > /dev/null 2>&1; then
+    echo "Puppet is already installed"
+    exit 0
+fi
+
+
+
+# Install wget if we have to (some older Ubuntu versions)
+echo "Installing wget..."
+apt-get --yes install wget > /dev/null
+
 
 
 # Install the PuppetLabs repo
@@ -13,10 +26,6 @@ dpkg -i puppet-release-${DISTRIB_CODENAME}.deb
 # Do the initial apt-get update
 echo "Initial apt-get update..."
 apt-get update >/dev/null
-
-# Install wget if we have to (some older Ubuntu versions)
-echo "Installing wget..."
-apt-get --yes install wget >/dev/null
 
 # Install Puppet
 echo "Installing Puppet..."

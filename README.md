@@ -33,7 +33,7 @@ Try the 'Hello, world' example:
     hello, world
 
 
-Install nginx and let puppet manage it for you:
+Run the nginx module and let puppet manage it for you:
 
     sudo puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
 

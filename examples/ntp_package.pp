@@ -1,3 +1,3 @@
-package {'ntp':
+package { 'ntp':
 	ensure	=> installed,
 }

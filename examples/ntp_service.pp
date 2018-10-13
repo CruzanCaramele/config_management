@@ -1,6 +1,7 @@
 service {'ntp':
 	ensure		=> running,
 	enable		=> true,
+	hasrestart	=> false,
 	hasstatus	=> false,
 	pattern		=> 'ntpd',
 }

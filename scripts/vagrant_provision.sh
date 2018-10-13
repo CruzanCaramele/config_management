@@ -9,13 +9,9 @@ if which  puppet > /dev/null 2>&1; then
     exit 0
 fi
 
-
-
 # Install wget if we have to (some older Ubuntu versions)
 echo "Installing wget..."
 apt-get --yes install wget > /dev/null
-
-
 
 # Install the PuppetLabs repo
 echo "Configuring PuppetLabs repo..."

@@ -2,10 +2,10 @@
 - hosts: webservers
   become: yes
   vars:
-    target_package: git
+    target_package_name: git
     target_package_state: latest
   tasks:
   - name: install git
     yum:
-      name: "{{ target_package }}"
-      state: "{{ target_package_name }}"
+      name: "{{ target_package_name }}"
+      state: "{{ target_package_state }}"

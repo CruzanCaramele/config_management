@@ -5,4 +5,6 @@ apache::install_ensure: 'present'
 apache::service_ensure: 'running'
 apache::service_hasrestart: true
 apache::vhosts_ensure: 'present'
+apache::vhosts_root: '/var/www'
+apache::vhosts_port: '80'
 apache::vhosts_root_ensure: 'directory'

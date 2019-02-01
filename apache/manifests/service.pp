@@ -3,8 +3,8 @@ class apache::service (
 ) inherits apache::params {
 	service {'apache_service':
 		name       => $service_name,
-		ensure     => $apache::service_ensure,
 		enable	   => $apache::service_enable,
+		ensure     => $apache::service_ensure,
 		hasrestart => $apach::service_hasrestart,
 	}
 }

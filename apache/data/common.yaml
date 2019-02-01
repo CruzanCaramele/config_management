@@ -1,5 +1,5 @@
 ---
+apache::service_enable: true
 apache::install_ensure: 'present'
 apache::service_ensure: 'running'
-apache::service_enable: true
 apache::service_hasrestart: true
